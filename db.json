@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "name": "Okan",
+      "email": "serifcanozdeniz@hotmail.com",
+      "password": "wfcdscds",
+      "image": "http://res.cloudinary.com/dyoywo6l4/image/upload/v1706025160/flow/ixy6shglcvbdlxxgveym.jpg",
+      "id": "40d5a84f-1a24-4bbd-863d-af54604bdc17"
+    },
+    {
+      "id": "9476f92e-d7d1-4718-a333-32b86e1edfc4",
+      "name": "gözde",
+      "email": "gozde@hotmail.com",
+      "password": "asdsacxzcs",
+      "image": "http://res.cloudinary.com/dyoywo6l4/image/upload/v1706028905/flow/rvgozhyvru029jekdufs.jpg"
+    },
+    {
+      "id": "b202607e-345b-4961-bbf4-6b4207f3d35e",
+      "name": "askidaokii",
+      "email": "ozdenizserifcan96@gmail.com",
+      "password": "dqwdadcasda",
+      "image": "http://res.cloudinary.com/dyoywo6l4/image/upload/v1706035826/flow/sv5gnmcizg8lakb9j9hk.jpg"
+    }
+  ]
+}
