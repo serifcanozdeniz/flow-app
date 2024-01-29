@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { UserContext } from "../context/UserContext";
 
 const ProfileInfo = () => {
-  const { activeUser } = useContext(UserContext);
+  const { activeUser, logout } = useContext(UserContext);
 
   return (
     <div className="group relative flex items-center gap-4 cursor-pointer p-2 hover:bg-gray-700 rounded-md transition">
@@ -12,12 +12,14 @@ const ProfileInfo = () => {
 
       {/* hover olunca açılır */}
 
-      <div className="group-hover:flex hidden flex-col absolute top-14 bg-gray-600 rounded p-1 start-5">
+      <div className="group-hover:flex hidden flex-col absolute top-14 bg-gray-600 rounded p-1 end-0">
         <p className="rounded p-2">{activeUser?.email}</p>
         <Link className="rounded p-2 w-full hover:bg-gray-400" to={"/profile"}>
           Profili Göster
         </Link>
-        <p className="rounded p-2 w-full hover:bg-gray-400">Çıkış Yap</p>
+        <p onClick={logout} className="rounded p-2 w-full hover:bg-gray-400">
+          Çıkış Yap
+        </p>
       </div>
     </div>
   );

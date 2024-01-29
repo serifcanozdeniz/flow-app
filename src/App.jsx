@@ -5,6 +5,8 @@ import Register from "./Pages/Register/index";
 import Header from "./components/Header";
 import Layout from "./Pages/Layout";
 import ProfileInfo from "./components/ProfileInfo";
+import ProfilePage from "./Pages/Profile";
+import ResetModal from "./Pages/Profile/ResetModal";
 
 const App = () => {
   return (
@@ -14,9 +16,11 @@ const App = () => {
 
       <Route element={<Layout />}>
         <Route path="/" element={<MainPage />} />
-        <Route path="/detay" element={<MainPage />} />
-        <Route path="/profile" element={<MainPage />} />
+        <Route path="/detay" element={<h1>Blog Detay Sayfası</h1>} />
+        <Route path="/profile" element={<ProfilePage />} />
       </Route>
+
+      <Route path="*" element={<h1>404</h1>} />
     </Routes>
   );
 };

@@ -1,25 +1,55 @@
 {
   "users": [
     {
+      "id": "4716e717-27ad-4592-b30e-ac8f39bb6374",
       "name": "Okan",
-      "email": "serifcanozdeniz@hotmail.com",
-      "password": "wfcdscds",
-      "image": "http://res.cloudinary.com/dyoywo6l4/image/upload/v1706025160/flow/ixy6shglcvbdlxxgveym.jpg",
-      "id": "40d5a84f-1a24-4bbd-863d-af54604bdc17"
-    },
-    {
-      "id": "9476f92e-d7d1-4718-a333-32b86e1edfc4",
-      "name": "gözde",
-      "email": "gozde@hotmail.com",
-      "password": "asdsacxzcs",
-      "image": "http://res.cloudinary.com/dyoywo6l4/image/upload/v1706028905/flow/rvgozhyvru029jekdufs.jpg"
-    },
-    {
-      "id": "b202607e-345b-4961-bbf4-6b4207f3d35e",
-      "name": "askidaokii",
       "email": "ozdenizserifcan96@gmail.com",
-      "password": "dqwdadcasda",
-      "image": "http://res.cloudinary.com/dyoywo6l4/image/upload/v1706035826/flow/sv5gnmcizg8lakb9j9hk.jpg"
+      "password": "merhaab123",
+      "image": "http://res.cloudinary.com/dyoywo6l4/image/upload/v1706555327/flow/o8najyekocheautmpwky.jpg"
+    }
+  ],
+  "posts": [
+    {
+      "id": "547ea6e8-5db3-4c83-9d1a-f4d4d5071759",
+      "title": "Elektrik Kesintisi",
+      "content": "Kesinti ne zaman biter ?",
+      "category": "Teknoloji",
+      "date": "2024-01-29T22:00:18.717Z",
+      "comments": [],
+      "author": {
+        "id": "4716e717-27ad-4592-b30e-ac8f39bb6374",
+        "name": "Okan",
+        "email": "ozdenizserifcan96@gmail.com",
+        "image": "http://res.cloudinary.com/dyoywo6l4/image/upload/v1706555327/flow/o8najyekocheautmpwky.jpg"
+      }
+    },
+    {
+      "id": "41660baa-8763-4876-a7a6-75dcda1b5550",
+      "title": "sdc",
+      "content": "zxc",
+      "category": "Hobi ve İlgi Alanları",
+      "date": "2024-01-29T22:17:02.962Z",
+      "comments": [],
+      "author": {
+        "id": "4716e717-27ad-4592-b30e-ac8f39bb6374",
+        "name": "Okan",
+        "email": "ozdenizserifcan96@gmail.com",
+        "image": "http://res.cloudinary.com/dyoywo6l4/image/upload/v1706555327/flow/o8najyekocheautmpwky.jpg"
+      }
+    },
+    {
+      "id": "c7a60a53-4397-43a3-90eb-884a0be21e00",
+      "title": "sdcxzc",
+      "content": "sacdsacz",
+      "category": "Eğlence ve Kültür",
+      "date": "2024-01-29T22:22:06.797Z",
+      "comments": [],
+      "author": {
+        "id": "4716e717-27ad-4592-b30e-ac8f39bb6374",
+        "name": "Okan",
+        "email": "ozdenizserifcan96@gmail.com",
+        "image": "http://res.cloudinary.com/dyoywo6l4/image/upload/v1706555327/flow/o8najyekocheautmpwky.jpg"
+      }
     }
   ]
 }

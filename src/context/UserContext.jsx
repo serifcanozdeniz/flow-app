@@ -69,13 +69,50 @@ export const UserProvider = ({ children }) => {
   };
 
   // hesaptan çıkma
+  const logout = () => {
+    // 1) local storage'ı temizle
+    localStorage.removeItem("TOKEN");
+    // 2) aktif kullanıcıyı sıfırla
+    setActiveUser(null);
+    // 3) login'e yönlendir
+    navigate("/login");
+  };
 
   // hesabı silme
+  const deleteAccount = () => {
+    // aktif kullanıcıyı veritabanından sil
+    axios.delete(`/users/${activeUser.id}`).then(() => {
+      // kullanıcının oturumunu kapat
+      logout();
+
+      // bildirim ver
+      toast.warning("Hesabınız silindi");
+    });
+  };
 
   // hesabı güncelle
+  const updatePassword = (newPass) => {
+    axios
+      .patch(`/users/${activeUser.id}`, { password: newPass })
+      .then((res) => {
+        // hesaba tekrar giriş yapılmasını zorunlu tutmak için oturumu kapatıyoruz
+        logout();
+        // bildirim ver
+        toast.success("Şifreniz başarıyla güncellendi. Tekrar giriş yapın.");
+      });
+  };
 
   return (
-    <UserContext.Provider value={{ activeUser, signup, login }}>
+    <UserContext.Provider
+      value={{
+        activeUser,
+        signup,
+        login,
+        logout,
+        deleteAccount,
+        updatePassword,
+      }}
+    >
       {children}
     </UserContext.Provider>
   );
